@@ -1,0 +1,47 @@
+Arguments: 
+  /usr/local/lib/nodejs/node-v12.13.1-linux-x64/bin/node /usr/share/yarn/bin/yarn.js add @babel/core @babel/preset/env @babel/preset-react @babel/preset-typescript webpack webpack-cli webpack-dev-server babel-loader react react-dom @types/react @types/react-dom
+
+PATH: 
+  /home/vinicius/.zplugin/polaris/bin:/usr/local/lib/nodejs/node-v12.13.1-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.13.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@babel%2fpreset/env: Request "https://registry.yarnpkg.com/@babel%2fpreset/env" returned a 405
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66956:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:140665:22)
+      at Request.emit (events.js:210:5)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141637:10)
+      at Request.emit (events.js:210:5)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141559:12)
+      at Object.onceWrapper (events.js:299:28)
+      at IncomingMessage.emit (events.js:215:7)
+      at endReadableNT (_stream_readable.js:1184:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "ts-todo",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "start": "webpack-dev-server --open",
+      "build": "webpack"
+    },
+    "repository": "https://github.com/cryptwh0ads/ts-todo.git",
+    "author": "Vinicius <wh0adscrypt@gmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
